@@ -9,6 +9,6 @@ RUN apk add python3-dev \
    && pip install requests \
    && pip install flask
 WORKDIR /Web-app
-LABEL "clustername"="elastic-outreach"
+LABEL "clustername"="elastic"
 ENTRYPOINT [ "python3" ]
 CMD  ["index.py"]
