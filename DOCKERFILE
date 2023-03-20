@@ -2,9 +2,9 @@
 
 FROM alpine:3.10
 
-copy . /Web-app 
+#copy . /Web-app 
 RUN apk add python3-dev \
-   && apk add curl
+   && apk add curl \
    && pip3 install --upgrade pip \
    && pip install requests \
    && pip install flask
